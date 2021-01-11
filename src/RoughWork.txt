@@ -1,0 +1,48 @@
+App Structure
+--------------
+
+-> src
+-------> actions
+------------> api.js(Handle all Http requests)
+------------> dCandidate.js (Redux actions & actions creators)
+------------> store.js (configure Redux store)
+
+-------> components
+------------>DCandidateForm.js (form operations)
+------------> DCandidate.js (list of records)
+------------> useForm.js (handles common form operations)
+
+-------> reducers
+------------> dCandidate.js
+------------> index.js
+
+-------> App.js
+-------> Index.js
+-------> index.css 
+
+
+
+To Use Redux, we need to install 3 packages.
+1. redux
+2. react-redux --> Connet React with Redux. 
+3. redux-thunk
+
+Redux has 3 elements
+1. action : Define what type of actions we have : CREATE,UPDATE,SELECT, DELETE etc 
+2. reducer : action object will be passed to the reducer. In reducer we modify the data in the store. 
+3. store : In Store, we put all the records in a state 
+
+
+In Component -> we call dispatch(action) -> It will reach to reducer - > Base upon the action reducer will update the data in the store.
+
+
+
+Create a store in actions folder
+import the store in App.js
+To implement store, we need to import Provider from react- redux
+
+
+
+// MATERIAL-UI
+
+1. We have to add container component from Material-UI. It defines how much space we want to use for app development from device display
